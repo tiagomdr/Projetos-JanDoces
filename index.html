@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Jan Doces e Salgados</title>
+</head>
+
+<body>
+    <header>
+        <h1>🍩Jan Doces e Salgados🍿</h1>
+        <nav id="inicio">
+            <a href="#galeria">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#" onclick="tabela()">Preços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="secao" id="principal">
+        <h1>Sabor que conquista o coração</h1>
+        <p>Doces e Salgados feitos com carinho para você e sua familia.</p>
+        <a href="#galeria">Ver Cardápio</a>
+    </section>
+
+    <section class="secao" id="galeria">
+        <h1 class="titulo-sections">Nossos Produtos</h1>
+        <div class="produtos">
+            <div class="produto-card"><img class="img-card" src="assets/02.jpg" alt="Batata Chips" />
+                <div class="info-produtos">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum rum, eaque excepturi maxime quidem ipsum exercitationem minus. Ratione, minus magnam?
+                    </p>
+                    <a href="#contato">Fazer pedido <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="produto-card"><img class="img-card" src="assets/02.jpg" />
+                <div class="info-produtos">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum rum, eaque excepturi maxime quidem ipsum exercitationem minus. Ratione, minus magnam?
+                    </p>
+                    <a href="#contato">Fazer pedido <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="produto-card"><img class="img-card" src="assets/02.jpg">
+                <div class="info-produtos">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum rum, eaque excepturi maxime quidem ipsum exercitationem minus. Ratione, minus magnam?
+                    </p>
+                    <a href="#contato">Fazer pedido <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="produto-card"><img class="img-card" src="assets/02.jpg" />
+                <div class="info-produtos">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum rum, eaque excepturi maxime quidem ipsum exercitationem minus. Ratione, minus magnam?
+                    </p>
+                    <a href="#contato">Fazer pedido <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></a>
+                </div>
+            </div> <!--Adicionar Alt="" nas imagens depois lembrete-->
+            <div class="produto-card"><img class="img-card" src="assets/02.jpg" />
+                <div class="info-produtos">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum rum, eaque excepturi maxime quidem ipsum exercitationem minus. Ratione, minus magnam?
+                    </p>
+                    <a href="#contato">Fazer pedido <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="produto-card"><img class="img-card" src="assets/02.jpg" />
+                <div class="info-produtos">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum rum, eaque excepturi maxime quidem ipsum exercitationem minus. Ratione, minus magnam?
+                    </p>
+                    <a href="#contato">Fazer pedido <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao" id="sobre">
+        <h1 class="titulo-sections">Sobre</h1>
+        <p>Aqui na Jan Doces, unimos sabor, diversão e qualidade para transformar seu momento em uma experiência
+            inesquecível. Trabalhamos com balões, salgadinhos, pipoca e doces, tudo feito com muito carinho e
+            ingredientes fresquinhos!</p>
+        <img class="img-sobre" src="assets/jose.png" alt="Avatar Tania e Jose">
+    </section>
+
+    <div class="escuro" onclick="desaparecer()"></div>
+    <img class="img-sobre img-valores" onclick="desaparecer()" src="assets/valores.png" alt="tabela de valores">
+
+
+    <section class="secao" id="clientes">
+        <h1 class="titulo-sections">O que nossos clientes dizem?</h1>
+        <div class="client-card">
+            <div class="starts">
+                <h1>★ ★ ★ ★ ★</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex amet repudiandae libero est animi
+                    doloribus exercitationem iure delectus ad, ducimus saepe accusantium ipsum recusandae praesentium
+                    quis maiores. Ea, odio?</p>
+                <h3>- Maria das flores</h3>
+            </div>
+
+            <div class="starts">
+                <h1>★ ★ ★ ★ ★</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex amet repudiandae libero est animi
+                    doloribus exercitationem iure delectus ad, ducimus saepe accusantium ipsum recusandae praesentium
+                    quis maiores. Ea, odio?</p>
+                <h3>- Mario do paraguai</h3>
+            </div>
+            <div class="starts">
+                <h1>★ ★ ★ ★ ★</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex amet repudiandae libero est animi
+                    doloribus exercitationem iure delectus ad, ducimus saepe accusantium ipsum recusandae praesentium
+                    quis maiores. Ea, odio?</p>
+                <h3>- Janaina Fagundes</h3>
+            </div>
+        </div>
+
+    </section>
+    <section class="secao" id="contato">
+        <h1 class="titulo-contato">Fale Conosco</h1>
+            <form onsubmit="">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Email" required>
+                <select required>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="balao">Balões</option>
+                    <option value="batata">Batatas Chips</option>
+                    <option value="mascara">Máscaras</option>
+                </select>
+                <button type="submit" class="btn">Enviar via Whatsapp</button>
+            </form>
+    
+    </section>
+
+    <footer>
+        &copy; 2025 Jan Doces e Delicias | Criado por Tiago Medeiros. <a href="#">Home</a>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+
+</html>
