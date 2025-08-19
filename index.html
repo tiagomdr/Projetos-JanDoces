@@ -127,7 +127,7 @@
     </section>
 
     <div class="escuro" onclick="desaparecer()"></div>
-    <img class="img-sobre img-valores" onclick="desaparecer()" src="assets/valores.png" alt="tabela de valores">
+<img class=" img-valores" onclick="desaparecer()" src="assets/valores.png" alt="tabela de valores">
 
 
     <section class="secao" id="clientes">
@@ -160,22 +160,18 @@
     </section>
     <section class="secao" id="contato">
         <h1 class="titulo-contato">Fale Conosco</h1>
-            <form onsubmit="">
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Email" required>
-                <select required>
-                    <option value="orcamento">Orçamento</option>
-                    <option value="balao">Balões</option>
-                    <option value="batata">Batatas Chips</option>
-                    <option value="mascara">Máscaras</option>
-                </select>
+            <form onsubmit="enviarWhatsapp()">
+                <input type="text" id="nome" placeholder="Seu nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="whatsapp" placeholder="Seu Telefone" required>
+               <textarea placeholder="O que eu posso ajudar?" name="duvidas"></textarea>
                 <button type="submit" class="btn">Enviar via Whatsapp</button>
             </form>
     
     </section>
 
     <footer>
-        &copy; 2025 Jan Doces e Delicias | Criado por Tiago Medeiros. <a href="#">Home</a>
+        &copy; 2025 Jan Doces e Delicias | Criado por Tiago Medeiros. <a href="#">Inicio</a>
     </footer>
 </body>
 <script src="scripts.js"></script>

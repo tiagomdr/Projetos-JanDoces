@@ -211,9 +211,9 @@ header a:hover {
 
 .img-valores {
     position: fixed;
-    top: 15%;
-    left: -500px;
-    width: 20%;
+    top: 10%;
+    left: -5000px;
+    width: 22%;
     border: none;
     font-size: 25px;
     box-shadow: 0 0 10px var(--corTextos);
@@ -282,9 +282,10 @@ header a:hover {
     margin: 20px auto;
     width: 300px;
     border-radius: 20px;
-    box-shadow: 0 0 12px var(--corTextos02);
+    box-shadow: 0 0 15px var(--corTextos02);
 
 }
+
 
 .titulo-contato {
     font-size: 40px;
@@ -304,8 +305,8 @@ form {
     
 }
 
-form input, select {
-    font-size: 19px;
+form input {
+    font-size: 15px;
     padding: 10px;
     width: 200px;
     color: rgba(47, 46, 47, 0.759);
@@ -317,9 +318,21 @@ form input:focus {
     box-shadow: 0 0 20px var(--corTextos02);
 }
 
-form select:focus {
+form textarea:focus {
      box-shadow: 0 0 20px var(--corTextos02);
 }
+
+textarea {
+    font-size: 15px;
+    padding: 20px 5px;
+    width: 200px;
+    height: 100px;
+    color: rgba(47, 46, 47, 0.759);
+    border: none;
+    box-shadow: 0 0 8px var(--corTextos02);
+}
+
+
 .btn {
     margin-top: 10px;
     width: 210px;
@@ -347,10 +360,12 @@ footer {
 }
 
 footer a {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     font-size: 20px;
     padding-left: 5px;
-    color: var(--corTextos);
+    color: var(--corTextos02);
     font-weight: 600
 }
 
@@ -363,6 +378,22 @@ footer a::after {
 
 
 @media screen and (max-width: 758px){
+
+    header {
+        gap: 10px;
+    }
+    header h1 {
+        font-size: 33px;
+    }
+
+    header a {  
+    font-size: 16px;
+    padding: 0;
+    margin-left: 20px;
+    text-align: center;
+
+}
+
     #sobre p {
         margin-top: 20px;
         width: 80%;
@@ -383,5 +414,17 @@ footer a::after {
     object-fit: cover;
     margin-top: 20px;
     border-radius: 2%;
+}
+
+.img-valores {
+    position: fixed;
+    top: 15%;
+    left: -500px;
+    width: 70%;
+    border: none;
+    font-size: 25px;
+    box-shadow: 0 0 10px var(--corTextos);
+    animation: pulse 2.5s infinite ease-in-out;
+    z-index: 1;
 }
 }
