@@ -24,10 +24,10 @@ function desaparecer() {
 function enviarWhatsapp() {
     const nome = document.querySelector('#nome').value
     const email = document.querySelector('#email').value
-    const select = document.querySelector('select').value
+    const duvidas = document.querySelector('#duvidas').value
     const whatsapp = document.querySelector('#whatsapp').value
 
-    const msg  = `Olá! Me chamo ${nome}. Gostaria de solicitar um    ${select}\nContato:${whatsapp}\nEmail:${email}`
+    const msg  = `Olá! Me chamo ${nome}. Gostaria de ${duvidas}\nContato:${whatsapp}\nEmail:${email}`
     const numero = '53997098651'
 
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`
